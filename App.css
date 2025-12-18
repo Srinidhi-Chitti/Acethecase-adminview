@@ -1,0 +1,11 @@
+/* src/App.css */
+.app {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  display: flex;
+  flex-direction: column; 
+}

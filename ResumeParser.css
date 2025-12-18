@@ -1,0 +1,255 @@
+/* ResumeParser.css */
+.resume-parser-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.resume-parser-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume-parser-header h1 {
+  font-size: 2.5rem;
+  color: #007367;
+  margin-bottom: 15px;
+}
+
+.resume-parser-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.resume-parser-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upload-box {
+  border: 2px dashed #007367;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 99, 115, 0.05);
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: rgba(0, 99, 115, 0.1);
+}
+
+.upload-icon {
+  color: #007367;
+}
+
+.upload-button {
+  background-color: #007367;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #007367;
+  transform: translateY(-2px);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #007367;
+  font-weight: 500;
+}
+
+.job-description h3 {
+  color: #007367;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.job-description textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  transition: border 0.3s ease;
+}
+
+.job-description textarea:focus {
+  outline: none;
+  border-color: #007367;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.analyze-button, .reset-button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analyze-button {
+  background-color: #007367;
+  color: white;
+  border: none;
+}
+
+.analyze-button:hover {
+  background-color: #007367;
+  transform: translateY(-2px);
+}
+
+.analyze-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.reset-button {
+  background-color: white;
+  color: #007367;
+  border: 2px solid #007367;
+}
+
+.reset-button:hover {
+  background-color: rgba(0, 99, 115, 0.1);
+}
+
+.results-section {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.results-section h2 {
+  color: #007367;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.match-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(0, 99, 115, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 5px solid #007367;
+}
+
+.score-circle span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007367;
+}
+
+.percentage-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #007367;
+  font-size: 1.5rem;
+}
+
+.score-feedback {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.score-feedback p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.improvement-tips {
+  background-color: rgba(0, 99, 115, 0.05);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.improvement-tips h3 {
+  color: #007367;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.improvement-tips ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.improvement-tips li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.improvement-tips li svg {
+  color: #007367;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .resume-parser-header h1 {
+    font-size: 2rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  font-size: 2rem;
+  }
+}

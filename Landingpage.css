@@ -1,0 +1,550 @@
+/* LandingPage.css */
+.landing-page {
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  background: url(https://c4.wallpaperflare.com/wallpaper/764/962/566/accomplishment-ceremony-college-education-wallpaper-preview.jpg);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: #eedfc0;
+}
+
+
+.hero-title span::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(1, 111, 121, 0.2);
+  z-index: -1;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-primary,
+.cta-secondary,
+.cta-button {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-primary {
+  background-color: #eedfc0;
+  color: #007367;
+  border: none;
+}
+
+.cta-primary:hover,
+.cta-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-secondary {
+  background-color: transparent;
+  color: #eedfc0;
+  border: 2px solid #eedfc0;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats Section */
+.stats-section {
+  background-color: #007367;
+  color: black;
+  padding: 80px 5%;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px;
+  min-width: 200px;
+  
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  
+}
+
+.stat-card p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  color: #007367;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #007367;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #007367;
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 92, 61, 0.5);
+  transition: all 0.5s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 15px 40px rgba(46, 125, 50, 0.1);
+  background-color: rgb(239, 255, 250);
+}
+
+.feature-icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: #79997b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #007367;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007367;
+}
+
+.feature-card p {
+  color: #007367;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #007367 0%, #007367 100%);
+  color: #007367;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.landing-footer {
+  background-color: #007367;
+  color: #eedfc0;
+  padding: 60px 5% 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-link {
+  color: #eedfc0;
+}
+.footer-link:hover {
+  color: #eedfc0;
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo-icon {
+  width: 2rem;
+  margin-right: 10px;
+  color: #eedfc0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stat-card {
+    min-width: 150px;
+    padding: 20px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-primary,
+  .cta-secondary,
+  .cta-button {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* Student Details Section */
+.student-details-section {
+  padding: 80px 5%;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  color: #007367;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #007367;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 115, 103, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.detail-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 115, 103, 0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.card-icon {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  color: #007367;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  color: #007367;
+  margin: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.detail-item strong {
+  color: #333;
+  margin-right: 8px;
+  min-width: 100px;
+}
+
+.item-icon {
+  margin-right: 10px;
+  color: #007367;
+  min-width: 20px;
+}
+
+/* Specific Card Styles */
+.mentor-card .card-icon {
+  color: #4a6fa5;
+}
+
+.student-card .card-icon {
+  color: #6a994e;
+}
+
+.meetings-card .card-icon {
+  color: #d68c45;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.skill-tag {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Meetings Styling */
+.meeting-item {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #007367;
+}
+
+.meeting-item:last-child {
+  margin-bottom: 0;
+}
+
+.meeting-date {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.meeting-topic {
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0;
+}
+
+.meeting-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.meeting-status.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.meeting-status.scheduled {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.meeting-status.upcoming {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.view-all-button {
+  background-color: transparent;
+  color: #007367;
+  border: 2px solid #007367;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.view-all-button:hover {
+  background-color: #007367;
+  color: white;
+}
+
+/* Responsive Design for Student Details */
+@media (max-width: 1024px) {
+  .details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .detail-item {
+    flex-direction: column;
+  }
+  
+  .detail-item strong {
+    margin-bottom: 5px;
+  }
+}
